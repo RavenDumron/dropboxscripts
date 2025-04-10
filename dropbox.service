@@ -1,0 +1,10 @@
+[Unit]
+Description=Dropbox as a service
+
+[Service]
+User=stagiaire
+ExecStart=/home/stagiaire/.dropbox-dist/dropboxd
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
